@@ -10,7 +10,7 @@ S → aSb | ε
 This CFG generates strings of the form "a^n b^n" where 'n' is the same number of 'a's and 'b's. Now, let's convert this CFG to an LBA.
 
 **Linearly Bounded Automaton (LBA):**
-- **Tape Alphabet:** {a, b, $}  (including the end-of-tape marker $)
+- **Tape Alphabet:** {a, b, $ }  (including the end-of-tape marker $)
 - **State Set:** {q0, q1, q_accept, q_reject}
 - **Transition Rules:**
   1. `(q0, a) → (q0, a, R)`   (Move right when reading 'a' in state q0)
